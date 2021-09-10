@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap");
+
+/* IMPORT TAILWIND */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.9/tailwind.min.css");
+#content-wrapper *:not(.ic-RichContentEditor *):not(.item-group-container *):not(#gradebook_wrapper *):not(.ui-tabs *):not(#outcomes *) {
+    color: #ffffff;
+}
+
+
+/* CUSTOMIZE THE FONT */
+
+* {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+
+/* FOR THE NAV MENU */
+
+
+/* MAKE THE CANVAS GLOABL NAV BAR A GRADIENT  */
+
+.ic-app-header {
+    background-color: #758e72;
+    background: linear-gradient(356deg, #65a0c4 0%, #7ea57a 100%);
+}
+
+.ic-app-header__logomark-container {
+    background-color: #758e72;
+}
+
+.ic-app-header__menu-list-item.ic-app-header__menu-list-item--active .ic-app-header__menu-list-link {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+/* CANVAS MODULE NAV BUTTONS */
+
+.module-sequence-footer-button--next .Button,
+.Button.module-sequence-footer-button--next,
+.Button.module-sequence-footer-button--previous,
+.module-sequence-footer-button--previous .Button {
+    background-color: #758e72;
+    background: -webkit-gradient(linear, left top, right top, from(#65a0c4), to(#7ea57a));
+    background: linear-gradient(90deg, #65a0c4 0%, #7ea57a 100%);
+    border-radius: 500px;
+    color: #ffffff !important;
+}
+
+.module-sequence-footer-content {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* TAILWIND OVERRIDES */
+
+p {
+    margin: 12px 0;
+}
+
+a {
+    color: var(--ic-link-color);
+    text-decoration: none;
+}
+
+.user_content li {
+    margin-bottom: 0.5rem;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    -webkit-padding-start: 40px;
+    padding-inline-start: 40px;
+}
+
+ul {
+    display: block;
+    list-style-type: circle;
+    -webkit-margin-before: 1em;
+    margin-block-start: 1em;
+    -webkit-margin-after: 1em;
+    margin-block-end: 1em;
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    -webkit-padding-start: 40px;
+    padding-inline-start: 40px;
+}
+
+
+/* SET A CUSTOM SELCTION COLOR (BECAUSE OF THE DARK MODE) */
+
+::-moz-selection {
+    color: #ffffff;
+    background: #1e3a8a;
+}
+
+::selection {
+    color: #ffffff;
+    background: #1e3a8a;
+}
+
+
+/* CUSTOMISE CANVAS TO BE DARK MODE */
+
+body {
+    background-color: #171A26;
+    background: -webkit-gradient(linear, left top, left bottom, from(#171A26), to(#0F0E0F));
+    background: linear-gradient(180deg, #171A26 0%, #0F0E0F 100%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.module-sequence-footer .module-sequence-footer-content,
+.header-bar,
+#breadcrumbs,
+.module-sequence-footer .module-sequence-footer-content,
+.nav-icon {
+    background-color: transparent;
+}
+
+.module-sequence-footer .module-sequence-footer-content {
+    border-top-color: transparent;
+}
+
+.nav-icon {
+    color: #E0E0E1;
+}
+
+.list-view>ul>li>a,
+.list-view>nav>ul>li>a {
+    color: #E0E0E1;
+}
+
+.pages.show .page-title,
+.pages .header-bar-outer-container .header-bar-container .header-left-flex .course-title {
+    color: #ffffff;
+}
+
+.list-view a.active {
+    border-left: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+a,
+#breadcrumbs li span {
+    color: #ffffff;
+}
+
+a.btn *,
+a.Button *,
+a.btn,
+a.Button,
+select,
+select *,
+input,
+input *,
+.tox-menubar *,
+.Editor.Statusbar *,
+.fOyUs_bGBk.fOyUs_desw.bDzpk_bGBk.bDzpk_busO.bDzpk_fZWR.bDzpk_qOas *,
+.tox-tbtn.tox-tbtn--select.tox-tbtn--bespoke *,
+.tox-tbtn.tox-tbtn--select.tox-tbtn--bespoke button.fOyUs_bGBk.fOyUs_fKyb.fOyUs_cuDs.fOyUs_cBHs.fOyUs_eWbJ.fOyUs_fmDy.fOyUs_eeJl.fOyUs_cBtr.fOyUs_fuTR.fOyUs_cnfU.fQfxa_bGBk *,
+.btn.cancel *,
+.btn.cancel {
+    color: #2d3b45 !important;
+}
+
+@media only screen and (max-width: 676px) {
+    .eHiXd_brAJ,
+    a.eHiXd_brAJ,
+    button.eHiXd_brAJ,
+    button.eHiXd_brAJ[type="button"],
+    button.eHiXd_brAJ[type="reset"],
+    button.eHiXd_brAJ[type="submit"] {
+        color: #0B1F50;
+    }
+}
+
+
+/* END OF DARK MODE CUSTOMIZATIONS */
+
+
+/* HIDE PAGE TITLE */
+
+.page-title {
+    display: none;
+}
+
+iframe.video-container {
+    width: 90%;
+    min-width: 300px;
+    margin: auto;
+    border-radius: 20px;
+    border: 11px solid #e4e4e4;
+}
+
+
+/* ACCORDION */
+
+.accordion .text-white {
+    --tw-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--tw-text-opacity)) !important;
+}
+
+.accordion .text-gray-100 {
+    --tw-text-opacity: 1;
+    color: rgba(243, 244, 246, var(--tw-text-opacity)) !important;
+}
